@@ -15,7 +15,7 @@ mongoose.connect('mongodb+srv://2312080:Mydeen2006@clustername.vsl32ko.mongodb.n
 .then(() => console.log("MongoDB Atlas Connected"))
 .catch(err => console.log(err));
 
-const itemRoutes = require('../routes/itemRoutes');
+const itemRoutes = require('./routes/itemRoutes');
 app.use('/api/items', itemRoutes);
 
 app.listen(5000, () => console.log("Server running on port 5000"));
